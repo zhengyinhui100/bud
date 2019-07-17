@@ -1,0 +1,12 @@
+.idea
+.DS_Store
+.vscode
+node_modules
+coverage
+run
+/logs
+priviate/log
+*.swp
+*.log
+yarn*
+

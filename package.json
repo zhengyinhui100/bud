@@ -1,0 +1,68 @@
+{
+  "name": "@xiaoge-fe/bud",
+  "version": "0.5.0",
+  "description": "基于 egg 的企业级 Web 框架",
+  "dependencies": {
+    "egg": "^2.22.2",
+    "egg-alinode": "^2.0.1",
+    "extend": "^3.0.1",
+    "js-yaml": "^3.12.0",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "ali-contributors": "^2.1.1",
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "beautify-benchmark": "^0.2.4",
+    "benchmark": "^1.0.0",
+    "egg-bin": "^4.13.0",
+    "egg-doctools": "^2.3.1",
+    "egg-plugin-puml": "^2.4.0",
+    "eslint": "^4.18.2",
+    "eslint-config-egg": "^7.0.0",
+    "jsdoc": "^3.5.5",
+    "rimraf": "^2.6.1"
+  },
+  "main": "index.js",
+  "types": "./index.d.ts",
+  "files": [
+    "bin",
+    "lib",
+    "config",
+    "index.js",
+    "index.d.ts"
+  ],
+  "config": {
+    "alicov": {
+      "threshold": 95
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "contributors": "ali-contributors",
+    "ci": "npm run lint && npm run cov",
+    "changelog": "git changelog -n"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "ci": {
+    "versions": "8, 10"
+  },
+  "homepage": "https://github.com/zhengyinhui100/bud",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengyinhui100/bud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhengyinhui100/bud/issues"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "author": ""
+}
